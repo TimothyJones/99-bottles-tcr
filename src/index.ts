@@ -1,5 +1,13 @@
-const formatBottles = (count: number) =>
-  count === 1 ? `${count} bottle` : `${count} bottles`;
+const formatBottles = (count: number) => {
+  if (count === 0) {
+    return `no more bottles`;
+  }
+  if (count === 1) {
+    return `${count} bottle`;
+  }
+
+  return `${count} bottles`;
+};
 
 export const verse = (currentBottles: number): string[] => [
   `${formatBottles(currentBottles)} of milk on the wall, ${formatBottles(

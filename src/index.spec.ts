@@ -18,5 +18,10 @@ describe('Bottles tests', () => {
       '2 bottles of milk on the wall, 2 bottles of milk.',
       'Take one down and pass it around, 1 bottle of milk on the wall.',
     ]);
+
+    expect(verse(1)).toEqual([
+      '1 bottle of milk on the wall, 1 bottle of milk.',
+      'Take one down and pass it around, no more bottles of milk on the wall.',
+    ]);
   });
 });
