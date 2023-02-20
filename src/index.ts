@@ -1,6 +1,11 @@
+const formatBottles = (count: number) =>
+  count === 1 ? `${count} bottle` : `${count} bottles`;
+
 export const verse = (currentBottles: number): string[] => [
-  `${currentBottles} bottles of milk on the wall, ${currentBottles} bottles of milk.`,
-  `Take one down and pass it around, ${
+  `${formatBottles(currentBottles)} of milk on the wall, ${formatBottles(
+    currentBottles
+  )} of milk.`,
+  `Take one down and pass it around, ${formatBottles(
     currentBottles - 1
-  } bottles of milk on the wall.`,
+  )} of milk on the wall.`,
 ];
