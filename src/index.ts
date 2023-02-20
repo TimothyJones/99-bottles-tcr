@@ -1,2 +1,2 @@
-export const verse = (): string =>
-  '99 bottles of milk on the wall, 99 bottles of milk.';
+export const verse = (currentBottles: number): string =>
+  `${currentBottles} bottles of milk on the wall, ${currentBottles} bottles of milk.`;
